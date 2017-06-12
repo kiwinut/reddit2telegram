@@ -1,0 +1,8 @@
+db: "telegram2reddit"
+db_host: "localhost"
+telegram_token: "380488546:AAGNJ3WBJTig8W3s9TRftEKjwLbAKuEv32o"
+sentry: "https://0458dc46f0f346a4bc7034edc36a9d4a:b245663441484e1098664f1346b85c86@sentry.io/178430"
+reddit:
+  user_agent: "Reddit to Telegram bot (by /u/aegore)"
+  client_id: "n4iMMh0xfpA18Q"
+  client_secret: "U9V-5roJm48dB_th4ZW-dcrbGCI"
