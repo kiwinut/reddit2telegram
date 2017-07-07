@@ -19,7 +19,7 @@ def supply(subreddit, config):
     reddit = praw.Reddit(user_agent=config['reddit']['user_agent'],
                         client_id=config['reddit']['client_id'],
                         client_secret=config['reddit']['client_secret'])
-    submissions = reddit.subreddit(submodule.subreddit).hot(limit=100)
+    submissions = reddit.subreddit(submodule.subreddit).search("flair_text:mv",sort='new',time_filter='day')
     r2t = utils.Reddit2TelegramSender(submodule.t_channel, config)
     success = False
     for submission in submissions:
