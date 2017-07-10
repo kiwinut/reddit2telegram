@@ -18,7 +18,7 @@ def send_post(submission, r2t):
         return False
     elif what == 'other':
         base_url = submission.url
-        text = '{}\n{}\n\n/r/{}\n{}'.format(title, base_url, sub, link)
+        text = '{}\n{}'.format(title, base_url)
         return r2t.send_text(text)
     elif what == 'album':
         return False
